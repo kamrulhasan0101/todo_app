@@ -81,7 +81,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome to Todo App.
+                    Welcome to Todo App.<br>
+                 <p>Time:{{Carbon\Carbon::now()->format('d.m.y g:i a')}}</p>
                 </div>
 
                 <div class="links">
