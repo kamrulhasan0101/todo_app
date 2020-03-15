@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91e56328-3f51-4073-9f69-ebddab2985fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TaskFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TaskFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_14_161952_create_tasks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_161952_create_tasks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +156,9 @@
       <workItem from="1584088461390" duration="5226000" />
       <workItem from="1584167513077" duration="929000" />
       <workItem from="1584179589699" duration="11367000" />
+      <workItem from="1584203213225" duration="5208000" />
+      <workItem from="1584242781607" duration="2962000" />
+      <workItem from="1584259425411" duration="935000" />
     </task>
     <servers />
   </component>
@@ -167,10 +166,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="339" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1584179629031">
+    <state x="339" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1584259480747">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1584179629031" />
+    <state x="339" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1584259480747" />
     <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1584168219395">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

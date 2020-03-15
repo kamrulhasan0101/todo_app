@@ -4,6 +4,7 @@
 
 use App\Model\Task;
 use App\Model\User;
+use App\Model\Category;
 use Faker\Generator as Faker;
 
 $factory->define(Task::class, function (Faker $faker) {
@@ -13,5 +14,6 @@ $factory->define(Task::class, function (Faker $faker) {
         'deadline_at'=> $faker->dateTime,
         'remarks'=> $faker->text,
         'user_id'=> factory(User::class),
+        'category_id'=> factory(Category::class),
     ];
 });
