@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91e56328-3f51-4073-9f69-ebddab2985fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/todo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +178,8 @@
       <workItem from="1584353770604" duration="1854000" />
       <workItem from="1584361794257" duration="782000" />
       <workItem from="1584392816627" duration="3169000" />
+      <workItem from="1584779364960" duration="20676000" />
+      <workItem from="1584810196394" duration="1789000" />
     </task>
     <servers />
   </component>
@@ -194,13 +187,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="339" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1584392886296">
+    <state x="478" y="308" width="399" height="149" key="NewPhpFileDialog" timestamp="1584791403750">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1584392886296" />
-    <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1584168219395">
+    <state x="478" y="308" width="399" height="149" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1584791403750" />
+    <state x="339" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1584810318764">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1584168219395" />
+    <state x="339" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1584810318764" />
+    <state x="347" y="168" key="run.anything.popup" timestamp="1584781518440">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="347" y="168" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1584781518440" />
+    <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1584790979963">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1584790979963" />
   </component>
 </project>
