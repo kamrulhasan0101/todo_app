@@ -69,4 +69,8 @@ class CategoryController extends Controller
         $category->delete();
         return redirect()->route('category.index')->with('status', 'Operation Successful!');
     }
+    public function category_task($id)
+    {
+        return view('category.categoryTask',['tasks'=>Category::findOrFail($id)->tasks]);
+    }
 }

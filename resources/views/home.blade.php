@@ -18,6 +18,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <style>
+        .w5{width:5px;}
+        .w500{width:500px;}
+        .w120{width:160px;}
+        .w100{width:100px;}
+        .b1{border: 1px solid black}
+    </style>
 </head>
 <body>
 <div id="app">

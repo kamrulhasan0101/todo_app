@@ -4,8 +4,12 @@
     <list default="true" id="91e56328-3f51-4073-9f69-ebddab2985fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/task/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/task/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +139,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1Z4BP3X0ow4iQCfg9lb5TDYOs6m" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -179,7 +185,11 @@
       <workItem from="1584361794257" duration="782000" />
       <workItem from="1584392816627" duration="3169000" />
       <workItem from="1584779364960" duration="20676000" />
-      <workItem from="1584810196394" duration="1789000" />
+      <workItem from="1584810196394" duration="13349000" />
+      <workItem from="1584873287934" duration="9101000" />
+      <workItem from="1584897653444" duration="10821000" />
+      <workItem from="1584911895648" duration="740000" />
+      <workItem from="1584972632663" duration="14130000" />
     </task>
     <servers />
   </component>
@@ -191,14 +201,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="478" y="308" width="399" height="149" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1584791403750" />
-    <state x="339" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1584810318764">
+    <state x="339" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1584972963146">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1584810318764" />
+    <state x="339" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1584972963146" />
     <state x="347" y="168" key="run.anything.popup" timestamp="1584781518440">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="347" y="168" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1584781518440" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584908064074">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1584908064074" />
     <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1584790979963">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

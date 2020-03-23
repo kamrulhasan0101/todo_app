@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::resources([
-    'category' => 'CategoryController'
+    'category' => 'CategoryController',
+    'task'=>'TaskController'
 ]);
+
+Route::get('/category/task/{task}', 'CategoryController@category_task')->name('category.task');
+Route::put('task-done/{task}', 'TaskController@task_done')->name('task.done');
 
 Route::get('/', function () {
     return view('welcome');
