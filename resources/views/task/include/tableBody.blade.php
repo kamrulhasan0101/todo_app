@@ -1,5 +1,5 @@
 <tr>
-    <th scope="row">{{ $i++ }}</th>
+    <th scope="row">{{ $loop->iteration }}</th>
     <td><a href="{{route('task.show',$task->id)}}" class="text-dark">{{$task->title}}</a></td>
     <td>{{$task->status}}</td>
     <td>{{$task->category->name}}</td>

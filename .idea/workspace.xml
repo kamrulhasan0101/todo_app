@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="91e56328-3f51-4073-9f69-ebddab2985fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/task/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/task/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/task/yieldContent/listTable.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +17,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -144,7 +140,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -190,6 +185,13 @@
       <workItem from="1584897653444" duration="10821000" />
       <workItem from="1584911895648" duration="740000" />
       <workItem from="1584972632663" duration="14130000" />
+      <workItem from="1585159509525" duration="2019000" />
+      <workItem from="1585230554843" duration="677000" />
+      <workItem from="1585245772912" duration="599000" />
+      <workItem from="1585316794086" duration="599000" />
+      <workItem from="1585330471616" duration="4253000" />
+      <workItem from="1585661571350" duration="1168000" />
+      <workItem from="1590510892075" duration="10000" />
     </task>
     <servers />
   </component>
@@ -201,21 +203,21 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="478" y="308" width="399" height="149" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1584791403750" />
-    <state x="339" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1584972963146">
+    <state x="339" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1585661578902">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1584972963146" />
+    <state x="339" y="210" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1585661578902" />
     <state x="347" y="168" key="run.anything.popup" timestamp="1584781518440">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="347" y="168" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1584781518440" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584908064074">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1585334327102">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1584908064074" />
-    <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1584790979963">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1585334327102" />
+    <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585330652244">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1584790979963" />
+    <state x="408" y="295" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1585330652244" />
   </component>
 </project>

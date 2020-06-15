@@ -7,9 +7,15 @@ use App\Http\Resources\Category\CategoryResource;
 use App\Model\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreCategoryRequest;
+
 
 class CategoryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:api');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -26,9 +32,15 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreCategoryRequest $request)
     {
-        //
+        $category= new Category;
+        $category->name=$request->name;
+        $category->user_id=$request->user_id;
+        $category->save();
+        return response([
+            'data'=> new CategoryResource($category)
+        ]);
     }
 
     /**
@@ -51,7 +63,10 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+      $category-> update($request->all());
+      return response([
+        'data' => new CategoryResource($category)
+      ]);
     }
 
     /**
@@ -62,6 +77,11 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+
+           return response([
+        'data' => "Data Deleted Successfilly!"
+      ]);
+
     }
 }
