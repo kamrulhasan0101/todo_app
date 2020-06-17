@@ -45,7 +45,13 @@ class CategoryController extends Controller
 
     public function show(Category $category)
     {
+        if(Auth::user()->id==$category->user_id){
         return view('category.show',['category'=>$category]);
+          }else{
+            return redirect()->back()->with('status', 'Sorry, Category Not Belongs to You.');
+          }
+         
+
     }
 
 
@@ -66,8 +72,13 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
 //        return $category->id;
+        if(Auth::user()->id==$category->user_id){
         $category->delete();
         return redirect()->route('category.index')->with('status', 'Operation Successful!');
+         }
+         else{
+            return redirect()->back()->with('status', 'Sorry, Category Not Belongs to You.');
+          }
     }
     public function category_task($id)
     {

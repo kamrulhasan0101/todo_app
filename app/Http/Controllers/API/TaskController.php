@@ -5,9 +5,18 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use App\Model\Task;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreTask;
+use App\Http\Resources\Task\TaskResource;
+use App\Http\Resources\Task\TaskCollection;
+use Illuminate\Support\Facades\Auth;
 
 class TaskController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth:api');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +24,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        return "hi";
+         return new TaskCollection(Auth::user()->tasks);
     }
 
     /**
@@ -24,9 +33,20 @@ class TaskController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreTask $request)
     {
-        //
+        $task= new Task;
+        $task->title=$request->title;
+        $task->description=$request->description;
+        $task->deadline_at=$request->deadline_at;
+        $task->status=$request->status;
+        $task->remarks=$request->remarks;
+        $task->user_id=$request->user_id;
+        $task->category_id=$request->category_id;
+        $task->save();
+        return response([
+            'data'=> new TaskResource($task)
+        ]);
     }
 
     /**
@@ -37,7 +57,14 @@ class TaskController extends Controller
      */
     public function show(Task $task)
     {
-        //
+    
+    if(Auth::user()->id==$task->user_id){
+            return new TaskResource($task);
+        }
+
+        return response()->json([
+               'error'=>'Task Not Belongs To User'
+        ]);
     }
 
     /**
@@ -47,9 +74,14 @@ class TaskController extends Controller
      * @param  \App\Model\Task  $task
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Task $task)
+    public function update(StoreTask $request, Task $task)
     {
-        //
+        if(Auth::user()->id==$task->user_id){
+             $task-> update($request->all());
+      return response([
+        'data' => new TaskResource($task)
+      ]);}
+      throw new TaskNotBelongsToUser;
     }
 
     /**
@@ -60,6 +92,15 @@ class TaskController extends Controller
      */
     public function destroy(Task $task)
     {
-        //
+        if(Auth::user()->id==$task->user_id){
+            $task->delete();
+        return response([
+        'data' => "Data Deleted Successfilly!"
+      ]);
+        }
+         return response()->json([
+               'error'=>'Task is Not Belongs To User'
+        ]);
+
     }
 }

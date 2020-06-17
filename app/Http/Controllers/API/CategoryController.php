@@ -8,6 +8,8 @@ use App\Model\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreCategoryRequest;
+use Illuminate\Support\Facades\Auth;
+use App\Exceptions\CategoryNotBelongsToUser;
 
 
 class CategoryController extends Controller
@@ -23,7 +25,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return new CategoryCollection(Category::all());
+        return new CategoryCollection(Auth::user()->categories);
     }
 
     /**
@@ -51,7 +53,14 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        return new CategoryResource($category);
+        if(Auth::user()->id==$category->user_id){
+            return new CategoryResource($category);
+        }
+
+        return response()->json([
+               'error'=>'Category Not Belongs To User'
+        ]);
+        
     }
 
     /**
@@ -63,10 +72,13 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-      $category-> update($request->all());
+        if(Auth::user()->id==$category->user_id){
+             $category-> update($request->all());
       return response([
         'data' => new CategoryResource($category)
-      ]);
+      ]);}
+      throw new CategoryNotBelongsToUser;
+     
     }
 
     /**
@@ -77,11 +89,17 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        $category->delete();
-
+        if(Auth::user()->id===$category->user_id){
+          $category->delete();
            return response([
         'data' => "Data Deleted Successfilly!"
       ]);
+        }
+        else{
+            return response()->json([
+                'error'=>'Category Does not belongs to User'
+            ]);
+        }
 
     }
 }
