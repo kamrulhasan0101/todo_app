@@ -8,9 +8,11 @@ use Throwable;
 use Exception;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use App\Exceptions\ExceptionTrait;
 
 class Handler extends ExceptionHandler
 {
+    use ExceptionTrait;
     /**
      * A list of the exception types that are not reported.
      *
@@ -56,16 +58,7 @@ class Handler extends ExceptionHandler
     {
         
         if($request->expectsJson()){
-
-            if ($exception instanceof ModelNotFoundException) {
-        return response()->json([
-            'error' => 'Entry for '.str_replace('App\\', '', $exception->getModel()).' not found'], 404);
-    }
-
-            if ($exception instanceof NotFoundHttpException) {
-                    return response()->json([
-                        'error' => 'Route Not Found '], 404);
-                }
+            return $this->apiException($request,$exception);
 
         }
 
